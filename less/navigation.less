@@ -1,1 +1,35 @@
 // Navigation Styles here
+
+.navigation {
+    .section-border-mixins();
+    margin: 0 auto;
+    padding: 20px;
+    @media @mobile{
+        padding-bottom: 1%;
+    }
+.nav-menu{
+    .flexbox-mixins();
+    margin: 0 auto;
+    @media @mobile{
+        flex-flow: column wrap;
+    }
+
+}
+h1{
+    width: 100%;
+    margin-left: 50px;
+}   
+.nav-links{
+    .flexbox-mixins();
+    justify-content: space-evenly;
+    width: 40%;
+    margin-right: 70px;
+    font-size: 1.8rem;
+    @media @mobile{
+        width: 100%;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+}
