@@ -1,39 +1,28 @@
 // Mixins in here
-.flexbox-mixins(){
+.flexbox-mixins{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
-.section-border-mixins(){
+.section-border-mixins{
     border-bottom: 2pt dashed lightgrey;
+    padding-bottom: 20px;
 }
 
-.section-mobile-mixins(){
-    padding: 0 4%;
-}
-.button-mixins(){
+.button-mixins{
     display: block;
-    padding-top: 15px;
-    padding-bottom: 10px;
-    background-color: rgba(0,128,128,0.8);
+    background-color: rgba(7, 152, 152, 1);
     color: white;
     font-size: 1.7rem;
     font-weight: bold;
     border-radius: 15px;
     box-shadow: 2px 2px 10px black;
-    margin: 0 10px 15px;
     text-align: center;
     cursor: pointer;
     transition: all 0.3s ease 0s;
     &:hover{
-        background-color: rgba(0,128,128,0.5);
+        background-color: rgba(13, 132, 145, 1);
+    }
+}
 
-    @media @mobile {
-        width: 375px;
-    }
-    }
-.section-mobile-mixins(){
-    padding: 0 4%;
-}
-}
