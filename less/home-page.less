@@ -1,25 +1,26 @@
 .header-container {
-  .section-border-mixins;
+  .border-mixins;
     margin: 0 auto;
     width: 100%;
 
   img{
     width: 100%;
-    margin: 0 auto;
+    height: auto;
     margin-bottom: 30px;
 
-  }
   h2{
     font-size: 3.7rem;
     padding-bottom: 20px;
     padding-top: 30px;
+    margin-top: 30px;
     
   }
   }
-
+}
   
 
 .home {
+  margin-bottom: 30px;
 
   .content-section {
     margin: 30px 0;
@@ -28,7 +29,7 @@
     justify-content: space-between;
 
     @media @mobile{
-      .flexbox-column;
+      flex-direction: column;
       justify-content: center;
       width: 100%;
       
@@ -61,7 +62,6 @@
       }
     }
   }
-}
 
 
   .inverse-content {
@@ -76,13 +76,13 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+    }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
     }
   }
-}
 
   .content-destination {
     width: 75%;
@@ -92,20 +92,21 @@
       border-radius: 10px;
     }
   }
+  
   .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
-
-    .destination {
-      width: 100%;
-      margin-bottom: 30px;
+    padding-top: 30px;
+    border-top: 2px dashed @navigation-border;
     
-      .btn {
-        .button-mixins;
+    .destination {
+      width: 30%;
+      
+      .button {
+        .button-mixin;
+        }
+      }
     }
   }
-}
-  
+
 // home 
