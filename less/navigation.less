@@ -2,23 +2,21 @@
 
 .navigation{
     .section-border-mixins;
-    width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
 
     .nav-menu{
         display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        padding-top: 25px;
+        flex-direction: flex end;
+        padding-top: 20px;
+        margin: 0 5%;
+        margin-top: 20px;
+        align-items: baseline;
 
         @media @mobile {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
+            .flexbox-column;
             margin: 0 auto;
-            padding: 5px;
+            margin-top: 10px;
         }
 
         h1 {
@@ -27,8 +25,9 @@
             font-size: 5.5rem;
 
             @media @mobile {
-                font-display: 7rem;
-                padding: 30px;
+                font-size: 5.5rem;
+                padding-left: 30%;
+                padding-bottom: 15px;
             }
         
         }
@@ -42,9 +41,7 @@
     font-size: 2.2rem;
 
     @media @mobile {
-        display: flex;
-        width: 100%;
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
 
 }

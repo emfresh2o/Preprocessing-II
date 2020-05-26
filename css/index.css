@@ -202,24 +202,23 @@ img {
 .navigation {
   border-bottom: 2pt dashed lightgrey;
   padding-bottom: 20px;
-  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 20px;
 }
 .navigation .nav-menu {
   display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  padding-top: 25px;
+  flex-direction: flex end;
+  padding-top: 20px;
+  margin: 0 5%;
+  margin-top: 20px;
+  align-items: baseline;
 }
 @media (max-width: 500px) {
   .navigation .nav-menu {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
     margin: 0 auto;
-    padding: 5px;
+    margin-top: 10px;
   }
 }
 .navigation .nav-menu h1 {
@@ -229,8 +228,9 @@ img {
 }
 @media (max-width: 500px) {
   .navigation .nav-menu h1 {
-    font-display: 7rem;
-    padding: 30px;
+    font-size: 5.5rem;
+    padding-left: 30%;
+    padding-bottom: 15px;
   }
 }
 .nav-links {
@@ -244,9 +244,7 @@ img {
 }
 @media (max-width: 500px) {
   .nav-links {
-    display: flex;
-    width: 100%;
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
 }
 .footer {
@@ -272,7 +270,7 @@ img {
   margin-bottom: 30px;
 }
 .header-container h2 {
-  font-size: 3.2rem;
+  font-size: 3.7rem;
   padding-bottom: 20px;
   padding-top: 30px;
 }
@@ -286,24 +284,44 @@ img {
   .home .content-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
   }
 }
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
-.home .content-section .text-content .img-content {
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+  }
+}
+.home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
-.home .content-section .text-content .img-content img {
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    align-items: center;
+    width: 70%;
+    margin-left: 60px;
+  }
+}
+.home .content-section .img-content img {
   border-radius: 10px;
 }
 .inverse-content {
   padding: 30px 0;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .inverse-content {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
 }
 .inverse-content .text-content {
   padding-left: 1%;
