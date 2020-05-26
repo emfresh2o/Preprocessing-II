@@ -8,8 +8,15 @@
     margin: 0 auto;
     margin-bottom: 30px;
 
-    }
   }
+  h2{
+    font-size: 3.2rem;
+    padding-bottom: 20px;
+    padding-top: 30px;
+  }
+  }
+
+  
 
 .home {
 
@@ -19,20 +26,27 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile{
+      .flexbox-column;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
-    }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
-
+    
       img {
         border-radius: 10px;
       }
     }
   }
+}
+}
 
   .inverse-content {
     padding: 30px 0;
@@ -41,14 +55,13 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
-    }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
     }
-  
   }
+}
 
   .content-destination {
     width: 75%;
@@ -74,5 +87,4 @@
     }
   }
 }
-//home
-
+// home 

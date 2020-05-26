@@ -1,10 +1,16 @@
 // Mixins in here
-.flexbox-mixins{
+.flexbox-row{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: center;
 }
+
+.flexbox-column{
+    display: flex;
+    flex-direction: column;
+}
+
 .section-border-mixins{
     border-bottom: 2pt dashed lightgrey;
     padding-bottom: 20px;
@@ -17,12 +23,14 @@
     font-size: 1.7rem;
     font-weight: bold;
     border-radius: 15px;
-    box-shadow: 2px 2px 10px black;
+    box-shadow: 2px 2px 7px black;
     text-align: center;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    padding: 10px;
+    margin-right: 80px;
+
     &:hover{
         background-color: rgba(13, 132, 145, 1);
     }
 }
-
