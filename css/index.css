@@ -21,8 +21,8 @@
   cursor: pointer;
   transition: all 0.3s ease 0s;
   padding: 15px;
-  margin-right: 50px;
-  margin-left: 20px;
+  margin-right: 40px;
+  margin-left: 30px;
 }
 .button-mixin:hover {
   background-color: #0d8491;
@@ -251,6 +251,7 @@ img {
   padding-bottom: 10px;
   margin: 0 auto;
   width: 100%;
+  padding: 4%;
 }
 .header-container img {
   width: 100%;
@@ -288,6 +289,7 @@ img {
     flex-direction: column-reverse;
     justify-content: center;
     width: 100%;
+    padding: 2%;
   }
 }
 .home .content-section .img-content {
@@ -312,6 +314,7 @@ img {
   .home .inverse-content {
     width: 100%;
     flex-direction: column-reverse;
+    padding: 2%;
   }
 }
 .home .inverse-content .text-content {
@@ -348,13 +351,18 @@ img {
   justify-content: space-between;
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
+  width: 100%;
+  margin: 0 auto;
 }
 @media (max-width: 500px) {
   .home .content-pick {
     flex-direction: column;
+    margin: 0 auto;
+    padding-left: 2%;
   }
   .home .content-pick .destination {
     width: 30%;
+    margin: 0 auto;
   }
   .home .content-pick .destination .button {
     background-color: #079898;
@@ -367,8 +375,8 @@ img {
     cursor: pointer;
     transition: all 0.3s ease 0s;
     padding: 15px;
-    margin-right: 50px;
-    margin-left: 20px;
+    margin-right: 40px;
+    margin-left: 30px;
   }
   .home .content-pick .destination .button:hover {
     background-color: #0d8491;
