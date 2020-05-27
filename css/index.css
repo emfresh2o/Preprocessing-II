@@ -211,6 +211,7 @@ img {
   width: 800px;
   padding-top: 10px;
   align-items: baseline;
+  font-size: 2.5rem;
 }
 @media (max-width: 500px) {
   .nav-menu {
@@ -219,6 +220,7 @@ img {
     width: 100%;
     margin: 0 auto;
     align-items: center;
+    font-size: 3rem;
   }
 }
 .nav-menu .nav-logo {
@@ -228,7 +230,6 @@ img {
   width: 50%;
 }
 .nav-menu .nav-logo .nav-links {
-  font-size: 2.3rem;
   width: 50%;
   margin-top: 20px;
   margin-left: 20%;
